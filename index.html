@@ -27,41 +27,29 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<div class="card mb-3">
-						<div class="card-header">Dados Pessoais</div>
 						<div class="card-body">
-							<p>1. Escreva o seu nome completo</p>
-							<div class="form-group">
-								<label for="nome">Nome</label>
-								<input type="text" class="form-control" name="nome" id="nome" aria-describedby="helpId"
-									placeholder="">
-
+							<h4>Nome</h4>
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for="nome">Nome</label>
+										<input type="text" class="form-control" name="nome" id="nome"
+											aria-describedby="helpId" placeholder="">
+										<br>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for="anexo">Sexo:</label>
+										<table>
+											<td><input type="radio" name="anexo" value="Masculino"> Macha</td>
+											<br>
+											<input type="radio" name="anexo" value="Femenino"> Fêmeo
+										</table>
+									</div>
+								</div>
 							</div>
-							<p>2. Marca o teu Sexo:</p>
-							<fieldset>
-								<table>
-									<td>
-										<tr><input type="radio" name="ze" value="Masculino"> Masculino</tr>
-									</td>
-									<br>
-									<td>
-										<tr><input type="radio" name="ze" value="Femenino"> Feminino</tr>
-									</td>
-									<br>
-									<td>
-										<tr><input type="radio" name="ze" value="indefinido"> Prefiro não dizer</tr>
-									</td>
-								</table>
-							</fieldset>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-12">
-					<div class="card mb-3">
-						<div class="card-header">Dados do Curso</div>
-						<div class="card-body">
-							<p>1. Digita as notas das disciplinas</p>
-							<br>
-							<p>Componente Sócio-Cultural</p>
+							<h4>Disciplinas</h4>
 							<div class="row">
 								<div class="col-sm-4">
 									<div class="form-group">
@@ -83,66 +71,57 @@
 										<input type="number" class="form-control" name="ai" id="ai" min="0" max="20">
 									</div>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-4">
 									<div class="form-group">
 										<label for="nome">TIC</label>
 										<input type="number" class="form-control" name="tic" id="tic" min="0" max="20">
 									</div>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-4">
 									<div class="form-group">
 										<label for="nome">Educação Física</label>
 										<input type="number" class="form-control" name="ef" id="ef" min="0" max="20">
 									</div>
 								</div>
-								<br>
-							</div>
-							<p>Componente Científica</p>
-							<div class="row">
-								<div class="col-sm-6">
+								<div class="col-sm-4">
 									<div class="form-group">
 										<label for="nome">Matemática</label>
 										<input type="number" class="form-control" name="matematica" id="matematica"
 											min="0" max="20">
 									</div>
 								</div>
-								<div class="col-sm-6">
+								<div class="col-sm-4">
 									<div class="form-group">
 										<label for="nome">Física e Química</label>
 										<input type="number" class="form-control" name="fq" id="fq" min="0" max="20">
 									</div>
 								</div>
-								<br>
-							</div>
-							<p>Componente Técnica</p>
-							<div class="row">
-								<div class="col-sm-3">
+								<div class="col-sm-4">
 									<div class="form-group">
 										<label for="nome">Redes de Computadores</label>
 										<input type="number" class="form-control" name="rc" id="rc" min="0" max="20">
 									</div>
 								</div>
-								<div class="col-sm-3">
+								<div class="col-sm-4">
 									<div class="form-group">
 										<label for="nome">Arquitetura de Computadores</label>
 										<input type="number" class="form-control" name="ac" id="ac" min="0" max="20">
 									</div>
 								</div>
-								<div class="col-sm-3">
+								<div class="col-sm-6">
 									<div class="form-group">
 										<label for="nome">Sistemas Operativos</label>
 										<input type="number" class="form-control" name="so" id="so" min="0" max="20">
 									</div>
 								</div>
-								<div class="col-sm-3">
+								<div class="col-sm-6">
 									<div class="form-group">
 										<label for="nome">Programação</label>
 										<input type="number" class="form-control" name="psi" id="psi" min="0" max="20">
 									</div>
 								</div>
 							</div>
-							<br>
-							<p>2. Digita as notas das FCT</p>
+							<h4>FCT & PAP</h4>
 							<div class="row">
 								<div class="col-sm-6">
 									<div class="form-group">
@@ -152,7 +131,7 @@
 								</div>
 								<div class="col-sm-6">
 									<div class="form-group">
-										<label for="nome">Número de horas 2º ano</label>
+										<label for="nome">Horas FCT 2º ano</label>
 										<input type="number" class="form-control" name="h2a" id="h2a">
 									</div>
 								</div>
@@ -164,18 +143,14 @@
 								</div>
 								<div class="col-sm-6">
 									<div class="form-group">
-										<label for="nome">Número de horas 3º ano</label>
+										<label for="nome">Horas FCT 3º ano</label>
 										<input type="number" class="form-control" name="h3a" id="h3a">
 									</div>
 								</div>
-							</div>
-							<br>
-							<p>3. Digita a nota da PAP</p>
-							<div class="row">
 								<div class="col-sm-12">
 									<div class="form-group">
 										<label for="nome">Nota da PAP</label>
-										<input type="mumber" class="form-control" name="pap" id="pap" min="0" max="20">
+										<input type="number" class="form-control" name="pap" id="pap" min="0" max="20">
 									</div>
 								</div>
 							</div>
@@ -183,22 +158,23 @@
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-sm-12">
-					<div class="card mb-3">
-						<div class="card-header">Confirmações</div>
-						<div class="card-body">
-							<center>
-								<input type="submit" class="btn btn-info" value="calcular"> <input type="reset"
-									class="btn btn-info">
-								<br>
-								<textarea type="text" id="txtTotal" placeholder="" rows="10" cols="90"
-									readonly></textarea>
-							</center>
-						</div>
-					</div>
+	</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="card mb-3">
+				<div class="card-header">Confirmações</div>
+				<div class="card-body">
+					<center>
+						<input type="submit" class="btn btn-info" value="calcular"> <input type="reset"
+							class="btn btn-info">
+						<br>
+						<textarea type="text" id="txtTotal" placeholder="" rows="10" cols="90" readonly></textarea>
+					</center>
 				</div>
 			</div>
+		</div>
+	</div>
 	</div>
 	</div>
 	</form>
