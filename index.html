@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+	<title>Calculador de Média</title>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="app.css">
+</head>
+
+<body class="p-4">
+	<div class="container">
+		<div class="jumbotron">
+			<center>
+				<h3>Média Final de Curso</h3>
+			</center>
+			<center>
+				<p>Digita os dados para calcular a sua média final de curso</p>
+			</center>
+		</div>
+		<form id="calculo" method="GET">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="card mb-3">
+						<div class="card-header">Dados Pessoais</div>
+						<div class="card-body">
+							<p>1. Escreva o seu nome completo</p>
+							<div class="form-group">
+								<label for="nome">Nome</label>
+								<input type="text" class="form-control" name="nome" id="nome" aria-describedby="helpId"
+									placeholder="">
+
+							</div>
+
+
+							<p>2. Sexo:</p>
+							<fieldset>
+
+								<table>
+									<td>
+										<tr><input type="radio" name="ze" value="Masculino"> Masculino</tr>
+									</td>
+									<br>
+									<td>
+										<tr><input type="radio" name="ze" value="Femenino"> Feminino</tr>
+									</td>
+									<br>
+									<td>
+										<tr><input type="radio" name="ze" value="indefinido"> Prefiro não dizer</tr>
+									</td>
+								</table>
+							</fieldset>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="card mb-3">
+						<div class="card-header">Dados do Curso</div>
+						<div class="card-body">
+
+							<p>1. Digita as notas das disciplinas</p>
+							<br>
+							<p>Componente Sócio-Cultural</p>
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for="nome">Português</label>
+										<input type="number" class="form-control" name="portugues" id="portugues"
+											min="0" max="20">
+
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for="nome">Inglês</label>
+										<input type="number" class="form-control" name="ing" id="ing" min="0" max="20">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group">
+										<label for="nome">Área de Integração</label>
+										<input type="number" class="form-control" name="ai" id="ai" min="0" max="20">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="nome">TIC</label>
+										<input type="number" class="form-control" name="tic" id="tic" min="0" max="20">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="nome">Educação Física</label>
+										<input type="number" class="form-control" name="ef" id="ef" min="0" max="20">
+									</div>
+								</div>
+								<br>
+							</div>
+							<p>Componente Científica</p>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="nome">Matemática</label>
+										<input type="number" class="form-control" name="matematica" id="matematica"
+											min="0" max="20">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="nome">Física e Química</label>
+										<input type="number" class="form-control" name="fq" id="fq" min="0" max="20">
+									</div>
+								</div>
+								<br>
+							</div>
+							<p>Componente Técnica</p>
+							<div class="row">
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for="nome">Redes de Computadores</label>
+										<input type="number" class="form-control" name="rc" id="rc" min="0" max="20">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for="nome">Arquitetura de Computadores</label>
+										<input type="number" class="form-control" name="ac" id="ac" min="0" max="20">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for="nome">Sistemas Operativos</label>
+										<input type="number" class="form-control" name="so" id="so" min="0" max="20">
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="form-group">
+										<label for="nome">Programação</label>
+										<input type="number" class="form-control" name="psi" id="psi" min="0" max="20">
+									</div>
+								</div>
+							</div>
+							<br>
+
+							<p>2. Digita as notas das FCT</p>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="nome">Nota FCT 2º ano</label>
+										<input type="number" class="form-control" name="fct2" id="fct2">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="nome">Número de horas 2º ano</label>
+										<input type="number" class="form-control" name="h2a" id="h2a">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="nome">Nota FCT 3º ano</label>
+										<input type="number" class="form-control" name="fct3" id="fct3">
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="nome">Número de horas 3º ano</label>
+										<input type="number" class="form-control" name="h3a" id="h3a">
+									</div>
+								</div>
+							</div>
+							<br>
+							<p>3. Digita a nota da PAP</p>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="form-group">
+										<label for="nome">Nota da PAP</label>
+										<input type="mumber" class="form-control" name="pap" id="pap" min="0" max="20">
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="card mb-3">
+						<div class="card-header">Confirmações</div>
+						<div class="card-body">
+							<center>
+								<input type="submit" class="btn btn-info" value="calcular"> <input type="reset"
+									class="btn btn-info">
+							</center>
+							<br>
+							<center>
+								<textarea type="text" id="txtTotal" placeholder="" rows="10" cols="90"
+									readonly></textarea>
+							</center>
+						</div>
+
+						<br>
+
+					</div>
+				</div>
+			</div>
+	</div>
+	</div>
+	</form>
+
+	<script src="app.js"></script>
+</body>
+
+</html>

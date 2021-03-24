@@ -1,0 +1,15 @@
+*, html, body {
+	background-color: #282a36;
+}
+
+h3, center p {
+	background-color: #e9ecef;
+}
+
+.card-header {
+	color: black;
+}
+
+form, .card-body center textarea#txtTotal {
+	color: white;
+}
