@@ -2,8 +2,11 @@
 	background-color: #282a36;
 }
 
-h3, center p {
-	background-color: #e9ecef;
+h3, center p, jumbotron center {
+	padding: 0;
+	margin: 0;
+	background-color: #282a36!important;
+	color: white;
 }
 
 .card-header {
